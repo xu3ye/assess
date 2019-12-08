@@ -1,0 +1,15 @@
+1.通用首部字段
+Cache-Control:控制缓存行为
+	有缓存响应指令和缓存请求指令
+	指定为public时，标明其他用户也可以利用缓存
+	private，响应只以特定用户
+	no-cache,防止从缓存中返回过期的资源
+	no-store,不能再本地存储或者响应
+	s-maxage,max-age指定缓存时间
+	min-fresh返回未过时间的资源
+	max-stale过期也能接收
+	only-if-extension,从缓存获取资源
+	cache-extension可以拓展指令
+2.响应首部字段
+	vary代理服务器缓存的管理信息
+	
